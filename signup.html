@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="4ASR/logo.png" alt="4ARS" >
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            
+            <div class="navItem">
+                <span class="limitedOffer"><a href="login.html">login&nbsp;</a></span>
+                <span class="limitedOffer"><a href="signup.html">&nbsp;Signup</a></span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem"><a href="index.html">4ARS</a></h3>
+            <h3 class="menuItem"><a href="promotion.html">Promotion</a></h3>
+            <h3 class="menuItem"><a href="product.html">Product</a></h3>
+            <h3 class="menuItem"><a href="member.html">Member</a></h3>
+            <h3 class="menuItem"><a href="contact.html">Contact</a></h3>
+        </div>
+    </nav>
+    <div class="con">
+        <h3 class="mt-4">สมัครสมาชิก</h3>
+        <hr>
+            <form action="index.html" onsubmit="return validateForm()">                
+                <div class="mb-3">
+                    <label for="username">User ID</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Username</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Lastname</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Gmail</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="mb-3">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        <hr>
+        <p >เป็นสมาชิกอยู่ใช่ไหม คลิ้กที่นี่เพื่อ <a href="login.html" id="a">ล็อกอิน</a></p>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>

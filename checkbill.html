@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4ARS Payment</title>
+  <link rel="stylesheet" href="checkbill.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="card">
+      <button class="back-button"><a href="product.html">← กลับ</a></button>
+      <div class="header">
+        <img src="4ASR/Branner.png" alt="Banner" class="banner">
+        <div class="icon">
+          <img src="imges/4ASR_index/logo.png" alt="RoV Icon">
+        </div>
+      </div>
+      <h2>4ARS : Check Bill</h2>
+      <div class="details">
+        <div class="detail-row">
+          <span>จำนวนทั้งหมด</span>
+          <span>4</span>
+        </div>
+        <div class="detail-row">
+          <span>ราคาต้น</span>
+          <span>250</span>
+        </div>
+        <div class="detail-row">
+          <span>+ VAT</span>
+          <span>5</span>
+        </div>
+        <div class="detail-row">
+          <span>ราคา</span>
+          <span>฿765</span>
+        </div>
+        <div class="detail-row">
+          <span>ตัวเลือกการชำระ:</span>
+          <span>QR Code Promptpay</span>
+        </div>
+        <div class="detail-row">
+          <span>ชื่อตัวผู้ชำระ</span>
+          <span>harny0654</span>
+        </div>
+      </div>
+      <button class="pay-button" id="buyNowBtn">ทำการชำระเงิน</button>
+      <!-- <button class="pay-button" onclick="handlePayment()">ทำการชำระเงิน</button> -->
+    </div>
+    <!-- <button id="buyNowBtn" class="buy-now">BUY NOW!</button> -->  <!-- ปุ่ม BUY NOW -->
+    <!-- ฟอร์ม Popup -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2>Personal Information</h2>
+            <form>
+                <img src="QR CODE.jpg" alt="" width="300" style="margin-left: 12%;">
+
+                <h3>Card Information</h3>
+                <div class="cardIcons">
+                  <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                  <img src="./img/master.png" alt="" width="40" class="cardIcon">
+              </div>
+
+                <label>Card Number</label>
+                <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+
+                <div class="card-details">
+                    <input type="text" placeholder="mm" class="small-input">
+                    <input type="text" placeholder="yyyy" class="small-input">
+                    <input type="text" placeholder="cvv" class="small-input">
+                </div>
+                <button id="checkoutBtn" class="checkout-btn">Checkout!</button>
+            </form>
+        </div>
+    </div>
+  </div>
+<script src="check.js"></script>
+</body>
+</html>

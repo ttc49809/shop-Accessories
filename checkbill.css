@@ -1,0 +1,176 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 80%;
+  }
+  
+  .header {
+    position: relative;
+  }
+  
+  .banner {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .icon {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    background: white;
+  }
+  
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  h2 {
+    margin: 40px 0 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .details {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .detail-row:last-child {
+    border-bottom: none;
+  }
+  
+  .pay-button {
+    background: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pay-button:hover {
+    background: #d32f2f;
+  }
+  
+/* ปุ่ม BUY NOW */
+.buy-now {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ฟอร์ม Modal */
+.modal {
+  display: none; /* ซ่อนตอนแรก */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-input {
+  width: 30%;
+}
+
+.checkout-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.cardIcons {
+  display: flex;
+}
+
+.cardIcon {
+  margin-right: 10px;
+}

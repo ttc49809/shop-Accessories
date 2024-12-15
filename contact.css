@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #5C4033;
+}
+
+nav {
+  background-color: #111;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBottom .menuItem a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+#nav .navTop .navItem img {
+  width: 35px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.limitedOffer {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+
+.menuItem {
+  margin-right: 50px;
+  cursor: pointer;
+  color: lightgray;
+  font-weight: 400;
+}
+
+.slider {
+  position: relative;
+  background: url("imges/4ASR_index/Branner5.png");
+  background-size: 100% 100%;
+  margin-bottom: 5%;
+  background-color: #964B00;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* สีดำทึบ 50% */
+  filter: blur(10px);
+}
+.sliderWrapper {
+  display: flex;
+  width: 500vw;
+  transition: all 1.5s ease-in-out;
+  width: 700px;
+  height: 400px;
+}
+
+.item2 {
+    margin-top: 10%;
+   
+}
+
+.image-gallery {
+  display: flex;
+  gap: 20px;
+  background-color: #964B00;
+  padding: 1%;
+  height: 20px;
+}
+
+.image-gallery1 {
+    gap: 20px;
+    background-color: whitesmoke;
+    color: white;
+}
+
+.image-gallery2 {
+    gap: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 1%;
+}
+
+.image-gallery3 {
+    gap: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 1%;
+}
+
+.imag {
+    display: flex;
+    justify-content: center;
+    color: black;
+   
+}
+
+.gallery-image {
+  width: 80px;
+  height: 80px;
+  padding: 1%;
+}
+
+.image-gallery3 .imag .gallery-image {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+.gallery-image2 {
+    width: 290px;
+    height: 50px;
+    object-fit: cover;
+    margin-left: 2.8%;
+    text-align: center;
+    color: white;
+    padding-top: 1.5%;
+}
+
+.gallery-image3 {
+    width: 290px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 2.8%;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.Menu-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14.5%;
+    font-size: 40px;
+    color: rgb(78, 23, 1);
+}
+
+.Menu-content2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14.5%;
+    font-size: 40px;
+    color: rgb(78, 23, 1);
+}
+.content-show {
+    display: flex;
+    justify-content: space-between; /* จัดวางเนื้อหาให้ห่างกัน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    flex-direction: row; /* จัดเรียงเนื้อหาในแนวนอน */
+    background-color: #5C4033;
+    padding: 30px;
+    color: black;
+    height: 40vh;
+}
+
+.content-left2 {
+    margin-right: 10%;
+}
+.content-right2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px; /* เพิ่มระยะห่างทางซ้ายระหว่างรูปภาพและข้อความ */
+    text-align: center;
+    font-size: 20px;
+    flex: 1;
+    color: whitesmoke;
+}
+.content-right2 h1 {
+    color: red;
+}
+.content-right2 h1 span {
+    color: black;
+}
+.nsButtom {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    width: 250px;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 12px;
+  }
+.slide1 {
+    width: 300px;
+    margin-right: 10%;
+}
+
+footer {
+    display: flex;
+    background-color: #111;
+    color: beige;
+}
+
+.footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+    
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: white;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }

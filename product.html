@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Shop</title>
+    <link rel="stylesheet" href="product.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon"  href="imges/4ASR_index/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="top-bar">
+        <div class="logo">
+          <img src="imges/4ASR_index/logo.png" alt="Logo" >
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." >
+          <button class="search-btn">🔍</button>
+        </div>
+        <div class="auth-links">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+        </div>
+      </div>
+      <nav class="nav-container">
+        <div class="nav-links">
+          <a href="index.html">4ARS</a>
+          <a href="promotion.html">Promotion</a>
+          <a href="product.html">Product</a>
+          <a href="member.html">Member</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <!-- รถเข็น -->
+        <div class="nav-icons">
+          <div class="cart" onclick="toggleCart()">
+            <!-- <i class="fa fa-shopping-cart"></i> -->
+            <img src="shopping-cart_1007891.png" alt="Cart" class="cart-icon" >
+            <span id="cart-count" class="cart-count">0</span>
+          </div>
+          <div id="cart-items" class="cart-items hidden">
+            <h3 style="color: black;">Cart Items</h3>
+            <ul id="cart-list"></ul>
+            <p id="cart-total" style="color: black;">Total: ฿0.00</p>
+            <button class="add-to-cart"><a href="checkbill.html" style="text-decoration: none; color: aliceblue;">Check Bill</a></button>
+          </div>
+          <div class="language-selector">
+            <span class="selected-lang">ENG</span>
+            <div class="dropdown">
+              <a href="#">ARB</a>
+              <a href="#">FRE</a>
+            </div>
+          </div>
+          <div class="grid-icon">
+            <i class="fa fa-th"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="shop-container">
+      <header class="shop-header">
+        <h1>Shop</h1>
+        <p>Showing 1–16 of 23 results</p>
+      </header>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า7.png" alt="Flying Ninja" class="product-image">
+          <h2>A001</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="A001" data-price="15.00" data-image="imges/4ASR_pd/สินค้า7.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า8.png" alt="Flying Ninja" class="product-image" />
+          <h2>A002</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="A002" data-price="15.00" data-image="imges/4ASR_pd/สินค้า8.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า9.png" alt="Flying Ninja" class="product-image" />
+          <h2>A003</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="A003" data-price="15.00" data-image="imges/4ASR_pd/สินค้า9.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="imges/4ASR_pd/สินค้า10.png" alt="Flying Ninja" class="product-image" />
+            <h2>A004</h2>
+            <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+            <button class="add-to-cart" data-name="A004" data-price="15.00" data-image="imges/4ASR_pd/สินค้า10.png">Add to Cart</button>
+          </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า11.png" alt="Flying Ninja" class="product-image">
+          <h2>B001</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="B001" data-price="15.00" data-image="imges/4ASR_pd/สินค้า11.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า13.png" alt="Flying Ninja" class="product-image" />
+          <h2>B002</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="B002" data-price="15.00" data-image="imges/4ASR_pd/สินค้า13.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า15.png" alt="Flying Ninja" class="product-image" />
+          <h2>B003</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="B003" data-price="15.00" data-image="imges/4ASR_pd/สินค้า15.png">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imges/4ASR_pd/สินค้า16.png" alt="Flying Ninja" class="product-image" />
+            <h2>B004</h2>
+            <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+            <button class="add-to-cart" data-name="B004" data-price="15.00" data-image="imges/4ASR_pd/สินค้า16.png">Add to Cart</button>
+          </div>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า18.png" alt="Flying Ninja" class="product-image">
+          <h2>C001</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="C001" data-price="15.00" data-image="imges/4ASR_pd/สินค้า18.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า20.png" alt="Flying Ninja" class="product-image" />
+          <h2>C002</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="C002" data-price="12.00" data-image="imges/4ASR_pd/สินค้า20.png">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="imges/4ASR_pd/สินค้า21.png" alt="Flying Ninja" class="product-image" />
+          <h2>C003</h2>
+          <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+          <button class="add-to-cart" data-name="C003" data-price="15.00" data-image="imges/4ASR_pd/สินค้า21.png">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="imges/4ASR_pd/สินค้า22.png" alt="Flying Ninja" class="product-image" />
+            <h2>C004</h2>
+            <p class="price">฿15.00 <span class="old-price">฿12.00</span></p>
+            <button class="add-to-cart" data-name="C004" data-price="15.00" data-image="imges/4ASR_pd/สินค้า22.png">Add to Cart</button>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footerLeft">
+          <div class="footerMenu">
+              <h1 class="fMenuTitle">About Us</h1>
+              <ul class="fList">
+                  <li class="fListItem">Company</li>
+                  <li class="fListItem">Contact</li>
+                  <li class="fListItem">Careers</li>
+                  <li class="fListItem">Affiliates</li>
+                  <li class="fListItem">Stores</li>
+              </ul>
+          </div>
+          <div class="footerMenu">
+              <h1 class="fMenuTitle">Useful Links</h1>
+              <ul class="fList">
+                  <li class="fListItem">Support</li>
+                  <li class="fListItem">Refund</li>
+                  <li class="fListItem">FAQ</li>
+                  <li class="fListItem">Feedback</li>
+                  <li class="fListItem">Stories</li>
+              </ul>
+          </div>
+          <div class="footerMenu">
+              <h1 class="fMenuTitle">Products</h1>
+              <ul class="fList">
+                  <li class="fListItem">Ring</li>
+                  <li class="fListItem">Bracelet</li>
+                  <li class="fListItem">Necklace</li>
+                  <li class="fListItem">Earring</li>
+                  
+              </ul>
+          </div>
+      </div>
+      <div class="footerRight">
+          <div class="footerRightMenu">
+              <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+              <div class="fMail">
+                  <input type="text" placeholder="your@email.com" class="fInput">
+                  <button class="fButton">Join!</button>
+              </div>
+          </div>
+          <div class="footerRightMenu">
+              <h1 class="fMenuTitle">Follow Us</h1>
+              <div class="fIcons">
+                  <img src="./img/facebook.png" alt="" class="fIcon">
+                  <img src="./img/twitter.png" alt="" class="fIcon">
+                  <img src="./img/instagram.png" alt="" class="fIcon">
+                  <img src="./img/whatsapp.png" alt="" class="fIcon">
+              </div>
+          </div>
+          <div class="footerRightMenu">
+              <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
+          </div>
+      </div>
+  </footer>
+  </body>
+  <script src="product.js"></script>
+</html>
